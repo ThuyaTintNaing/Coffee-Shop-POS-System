@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="151.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_project.quantitycontrol">
+   <children>
+      <TextField fx:id="txfqty" layoutX="20.0" layoutY="26.0" prefHeight="25.0" prefWidth="112.0" promptText="Enter quantity" />
+      <JFXButton fx:id="btnadd" layoutX="76.0" layoutY="57.0" prefHeight="25.0" prefWidth="55.0" text="Add" />
+   </children>
+</AnchorPane>

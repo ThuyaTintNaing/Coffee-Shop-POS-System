@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="1108.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_project.adminui_control">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="60.0" prefHeight="568.0" prefWidth="164.0" style="-fx-background-color: #134c4f;">
+         <children>
+            <JFXButton fx:id="buttmenu" alignment="TOP_LEFT" layoutY="38.0" onAction="#menuaction" prefHeight="41.0" prefWidth="164.0" text="Menu Info" textFill="#eeeeee" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_menu_48px_2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="buttreport" alignment="TOP_LEFT" layoutY="208.0" onAction="#saleaction" prefHeight="41.0" prefWidth="164.0" text="Sale Report" textFill="#e8e8e8" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_report_file_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="buttsatff" alignment="TOP_LEFT" layoutY="115.0" onAction="#staffaction" prefHeight="41.0" prefWidth="164.0" text="Staff Info" textFill="#dadada" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_add_user_male_skin_type_7_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+               <padding>
+                  <Insets left="20.0" top="5.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="TOP_LEFT" layoutX="1.0" layoutY="520.0" onAction="#logoutaction" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: red;" text="Logout" textFill="#f5f5f5" AnchorPane.bottomAnchor="0.0">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8_exit_48px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </JFXButton>
+            <ImageView disable="true" fitHeight="76.0" fitWidth="102.0" layoutX="86.0" layoutY="170.0" opacity="0.22" pickOnBounds="true" preserveRatio="true" rotate="30.0">
+               <image>
+                  <Image url="@../images/icons8_java_104px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="76.0" fitWidth="102.0" layoutX="-24.0" layoutY="293.0" opacity="0.22" pickOnBounds="true" preserveRatio="true" rotate="30.0">
+               <image>
+                  <Image url="@../images/icons8_java_104px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="76.0" fitWidth="102.0" layoutY="72.0" opacity="0.22" pickOnBounds="true" preserveRatio="true" rotate="30.0">
+               <image>
+                  <Image url="@../images/icons8_java_104px.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="76.0" fitWidth="102.0" layoutX="80.0" layoutY="397.0" opacity="0.22" pickOnBounds="true" preserveRatio="true" rotate="32.0">
+               <image>
+                  <Image url="@../images/icons8_java_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="mainpane" layoutX="175.0" layoutY="68.0" prefHeight="557.0" prefWidth="930.0" />
+      <AnchorPane prefHeight="64.0" prefWidth="1108.0" style="-fx-background-color: #ffd083;">
+         <children>
+            <QuadCurve controlX="35.091033935546875" controlY="-134.0" endX="126.09103393554688" fill="#134c4f" layoutX="48.0" layoutY="74.0" startX="-284.9089660644531" stroke="#12232e" strokeType="INSIDE" strokeWidth="0.0" />
+            <ImageView fitHeight="61.0" fitWidth="131.0" layoutX="7.0" layoutY="9.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/LogoMakr-0UmmNq.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

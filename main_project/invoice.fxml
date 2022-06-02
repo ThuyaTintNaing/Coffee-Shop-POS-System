@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="472.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-12.0" prefHeight="570.0" prefWidth="472.0" style="-fx-background-color: #3f5b56;">
+         <children>
+            <AnchorPane layoutX="61.0" layoutY="26.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="350.0" style="-fx-background-color: white;">
+               <children>
+                  <Label layoutX="127.0" layoutY="14.0" prefHeight="31.0" prefWidth="96.0" text="Cafe Villla">
+                     <font>
+                        <Font size="21.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="88.0" layoutY="68.0" text="01-123-234-345,">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="185.0" layoutY="69.0" text="01-222-333-444">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="103.0" text="Silp No: 001">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="103.0" text="20/12/2020">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="274.0" layoutY="103.0" text="6:40:19PM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="235.0" layoutX="108.0" layoutY="153.0" startX="-100.0" />
+                  <Label layoutX="191.0" layoutY="123.0" text="CasherName: John Cena">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="123.0" text="CasherID: c01">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="160.0" text="Description">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="120.0" layoutY="160.0" text="Qty">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="190.0" layoutY="160.0" text="Price">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="276.0" layoutY="160.0" text="Amount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="190.0" text="Cappuccino">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="216.0" text="Black tea">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="242.0" text="Hamburger">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="235.5" layoutX="110.0" layoutY="365.0" startX="-106.0" />
+                  <Line endX="236.0" layoutX="107.0" layoutY="277.0" startX="-100.0" />
+                  <Label layoutX="181.0" layoutY="190.0" text="3000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="102.0" layoutY="190.0" prefHeight="20.0" prefWidth="55.0" text="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="421.0" text="Cash">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="216.0" text="2500.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="7.0" layoutY="463.0" text="Change">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="183.0" layoutY="242.0" text="3500.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="290.0" text="9000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="274.0" layoutY="316.0" prefHeight="20.0" prefWidth="55.0" text="0.00">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="290.0" text="Sub-total">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="104.0" layoutY="242.0" prefHeight="20.0" prefWidth="55.0" text="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="103.0" layoutY="216.0" prefHeight="20.0" prefWidth="55.0" text="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="103.0" layoutY="290.0" prefHeight="20.0" prefWidth="55.0" text="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="316.0" text="Discount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="8.0" layoutY="381.0" text="Net Amount">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="281.0" layoutY="463.0" text="1000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="281.0" layoutY="381.0" text="9000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="344.0" text="Tax (Inclusive)">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="290.0" layoutY="344.0" text="150">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="190.0" text="3000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="277.0" layoutY="421.0" text="10000.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="279.0" layoutY="216.0" text="2500.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="278.0" layoutY="242.0" text="3500.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Line endX="235.5" layoutX="110.0" layoutY="411.0" startX="-106.0" />
+                  <Line endX="235.5" layoutX="110.0" layoutY="495.0" startX="-106.0" />
+                  <Line endX="235.5" layoutX="111.0" layoutY="454.0" startX="-106.0" />
+                  <Label layoutX="147.0" layoutY="505.0" prefHeight="21.0" prefWidth="77.0" text="Thank you">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="347.0" layoutY="567.0" prefHeight="31.0" prefWidth="122.0" style="-fx-background-color: #ffd083;" text="Generate" />
+      <JFXButton layoutX="214.0" layoutY="567.0" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: #ffd083;" text="Cancel" />
+   </children>
+</AnchorPane>

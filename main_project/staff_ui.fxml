@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="669.0" prefWidth="1340.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_project.staffuicontrol">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="-3.0" prefHeight="675.0" prefWidth="205.0" style="-fx-background-color: #134c4f;" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="-3.0">
+         <children>
+            <Label layoutX="32.0" layoutY="618.0" prefHeight="20.0" prefWidth="149.0" text="Developed by thuya" textFill="#dddddd" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="32.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="638.0" text="09-111-222-333,09-555-333-444" textFill="#c9c9c9" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="16.0" />
+            <Label layoutX="40.0" layoutY="593.0" text="thuya@gmail.com" textFill="#bfbfbf" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="40.0" />
+            <AnchorPane prefHeight="97.0" prefWidth="205.0" style="-fx-background-color: #1f6868; -fx-background-radius: 0 0 15px 15px;">
+               <children>
+                  <ImageView fitHeight="97.0" fitWidth="174.0" layoutX="15.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/LogoMakr-3I4Atd.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="loginstaffname" layoutX="55.0" layoutY="166.0" opacity="0.0" text="Win Myo Hlaing" textFill="#1f6868">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="loginstaffui" layoutX="90.0" layoutY="193.0" opacity="0.0" text="Staff id - 002" textFill="#248486">
+               <font>
+                  <Font name="System Bold Italic" size="13.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <TableView fx:id="sale_table" editable="true" layoutX="921.0" layoutY="69.0" prefHeight="325.0" prefWidth="411.0" AnchorPane.bottomAnchor="275.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="69.0">
+        <columns>
+          <TableColumn fx:id="col_name" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="col_qty" prefWidth="60.0" text="Qty" />
+            <TableColumn fx:id="col_unitprice" prefWidth="75.0" text="Each" />
+          <TableColumn fx:id="col_total" prefWidth="95.0" text="Total" />
+            <TableColumn fx:id="buttcol" prefWidth="78.0" text="Action" />
+        </columns>
+         <effect>
+            <DropShadow color="#686868" />
+         </effect>
+      </TableView>
+      <AnchorPane layoutX="322.0" layoutY="69.0" prefHeight="51.0" prefWidth="474.0" style="-fx-background-color: #e1e5eb; -fx-background-radius: 7px;" AnchorPane.topAnchor="69.0">
+         <children>
+            <JFXButton fx:id="all_butt" buttonType="RAISED" layoutX="14.0" layoutY="10.0" onAction="#allmenu" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #134c4f;" text="All" textFill="#c3c3c3" />
+            <JFXButton fx:id="drink_butt" layoutX="131.0" layoutY="10.0" onAction="#drinkmenu" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ffd083;" text="Drinks" textFill="#3c3c3c" />
+            <JFXButton fx:id="dess_butt" layoutX="248.0" layoutY="10.0" onAction="#dessertmenu" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ffd083;" text="Dessert" textFill="#2c2b2b" />
+            <JFXButton fx:id="main_butt" layoutX="360.0" layoutY="10.0" onAction="#mainmenu" prefHeight="31.0" prefWidth="91.0" style="-fx-background-color: #ffd083;" text="Main Course" textFill="#4d4d4d" />
+         </children>
+         <effect>
+            <DropShadow color="WHITE" height="25.45" radius="10.370000000000001" width="18.03" />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="960.0" layoutY="379.0" prefHeight="215.0" prefWidth="411.0" style="-fx-background-color: #134c4f; -fx-background-radius: 7px;" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="13.0">
+         <children>
+            <Label layoutX="14.0" layoutY="72.0" prefHeight="27.0" prefWidth="83.0" style="-fx-font-weight: bold;" text="Discount :" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="subtotal" layoutX="217.0" layoutY="2.0" prefHeight="27.0" prefWidth="112.0" text="0 kyat" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="89.0" layoutY="141.0" prefHeight="31.0" prefWidth="83.0" style="-fx-font-weight: bold;" text="Total :" textFill="#cdcdcd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="6.0" prefHeight="27.0" prefWidth="83.0" text="Subtotal :" textFill="#cdcdcd">
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="39.0" prefHeight="27.0" prefWidth="50.0" text="Tax :" textFill="#cdcdcd">
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbltotal" layoutX="233.0" layoutY="143.0" prefHeight="31.0" prefWidth="174.0" text="0 kyat" textFill="#cdcdcd">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txfpaid" layoutX="217.0" layoutY="108.0" />
+            <Label layoutX="14.0" layoutY="111.0" prefHeight="27.0" prefWidth="57.0" style="-fx-font-weight: bold;" text="Paid :" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="183.0" prefHeight="27.0" prefWidth="83.0" style="-fx-font-weight: bold;" text="Refund :" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txftax" layoutX="217.0" layoutY="36.0" onAction="#taxenter" />
+            <TextField fx:id="txfdiscount" layoutX="217.0" layoutY="69.0" />
+            <Label fx:id="lblrefund" layoutX="221.0" layoutY="179.0" prefHeight="21.0" prefWidth="183.0" text="0 kyat" textFill="#cdcdcd">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <JFXButton fx:id="btninvoice" layoutX="1199.0" layoutY="609.0" onAction="#invoiceaction" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #ffd083;" text="Generate invoice" textFill="#363636" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+      <AnchorPane layoutX="219.0" prefHeight="57.0" prefWidth="1123.0" style="-fx-background-color: #ffd083;" AnchorPane.leftAnchor="219.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXButton layoutX="1024.0" layoutY="11.0" onAction="#actionlogout" prefHeight="17.0" prefWidth="99.0" text="Logout" AnchorPane.rightAnchor="14.0">
+               <graphic>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../images/icons8_export_26px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Text fx:id="date_time" layoutX="49.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="1086.0" layoutY="624.0" onAction="#addtotable" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #ffd083;" text="Add" textFill="#464646" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="142.0" />
+      <StackPane fx:id="stack" layoutX="250.0" layoutY="142.0" prefHeight="432.0" prefWidth="617.0" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="473.0" AnchorPane.topAnchor="142.0">
+         <children>
+            <ScrollPane fx:id="scroll" prefHeight="437.0" prefWidth="617.0" style="-fx-background-color: transparent;" />
+         </children>
+      </StackPane>
+      <AnchorPane layoutX="250.0" layoutY="609.0" prefHeight="65.0" prefWidth="617.0" style="-fx-background-color: #e1e5eb; -fx-background-radius: 7;" AnchorPane.bottomAnchor="3.0">
+         <children>
+            <JFXTextField fx:id="txfprice" editable="false" focusColor="#3f5b56" labelFloat="true" layoutX="304.0" layoutY="29.0" prefHeight="30.0" prefWidth="136.0" promptText="Menu price" unFocusColor="BLACK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txfqty" editable="false" focusColor="#3f5b56" labelFloat="true" layoutX="467.0" layoutY="29.0" prefHeight="30.0" prefWidth="136.0" promptText="Quantity" unFocusColor="#363634">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txfname" editable="false" focusColor="#3f5b56" labelFloat="true" layoutX="122.0" layoutY="29.0" prefHeight="25.0" prefWidth="149.0" promptText="Menu name" unFocusColor="BLACK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <Text fill="#514e4e" layoutX="8.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Selected menu">
+               <font>
+                  <Font size="15.0" />
+               </font></Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

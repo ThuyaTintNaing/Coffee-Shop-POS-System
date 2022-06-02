@@ -1,0 +1,9 @@
+.indexed-cell:even{
+	-fx-base:  #ffd083;
+}
+.indexed-cell:odd{
+	-fx-base:  #ffd083;
+}
+.column-header{
+	-fx-base:  #ffd083;
+	}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.QuadCurve?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="936.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main_project.ReportUiControl">
+   <children>
+      <QuadCurve controlX="-153.0" controlY="120.0" disable="true" endX="84.0" endY="-52.0" fill="#134c4f" layoutX="760.0" layoutY="52.0" opacity="0.8" startX="-252.0" startY="-52.0" stroke="#134c4f" strokeType="INSIDE" strokeWidth="0.0" />
+      <QuadCurve controlX="-294.0" controlY="-161.0" disable="true" endX="84.0" endY="-25.0" fill="#134c4f" layoutX="873.0" layoutY="405.0" opacity="0.8" startX="84.0" startY="306.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <QuadCurve controlX="715.0" controlY="-412.0" disable="true" endX="-56.0" endY="-247.0" fill="#134c4f" layoutX="55.0" layoutY="374.0" opacity="0.8" startX="-56.0" startY="169.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+      <TableView fx:id="SaleDetail_table" editable="true" layoutX="31.0" layoutY="50.0" prefHeight="458.0" prefWidth="875.0" style="-fx-background-color: transparent;">
+         <columns>
+            <TableColumn fx:id="invoice_id" prefWidth="90.0" text="Invoice id" />
+            <TableColumn fx:id="saledate" prefWidth="140.0" text="Sale Date" />
+            <TableColumn fx:id="menuname" minWidth="0.0" prefWidth="190.0" text="Menu Name" />
+            <TableColumn fx:id="category" prefWidth="149.0" text="Category" />
+            <TableColumn fx:id="unitprice" minWidth="0.0" prefWidth="120.0" text="Unit Price" />
+            <TableColumn fx:id="qty" prefWidth="85.0" text="Quantity" />
+            <TableColumn fx:id="totalamount" prefWidth="100.0" text="Total amount" />
+         </columns>
+      </TableView>
+      <Button layoutX="743.0" layoutY="517.0" mnemonicParsing="false" onAction="#printaction" prefHeight="26.0" prefWidth="109.0" style="-fx-background-color: #ffd083; -fx-background-radius: 20 0 20 0;" text="Print" textFill="#30110d" />
+      <Button layoutX="637.0" layoutY="17.0" mnemonicParsing="false" onAction="#setnormalaction" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #ffd083; -fx-background-radius: 20 0 20 0;" text="Refresh">
+         <graphic>
+            <ImageView fitHeight="12.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_refresh_24px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <JFXDatePicker fx:id="enddate" defaultColor="#dda34b" layoutX="307.0" layoutY="16.0" prefHeight="25.0" prefWidth="171.0" promptText="End Date" />
+      <JFXDatePicker fx:id="startdate" defaultColor="#dda34b" layoutX="78.0" layoutY="15.0" prefHeight="25.0" prefWidth="171.0" promptText="Start Date" />
+      <Button layoutX="521.0" layoutY="18.0" mnemonicParsing="false" onAction="#searchaction" prefHeight="25.0" prefWidth="97.0" style="-fx-background-color: #ffd083; -fx-background-radius: 20 0 20 0;" text="Search">
+         <graphic>
+            <ImageView fitHeight="12.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8_search_26px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="262.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_less_than_50px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
